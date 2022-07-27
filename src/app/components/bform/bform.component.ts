@@ -12,7 +12,7 @@ export class BformComponent implements OnInit {
   b:String="abcd"
   submit(name:string,pass:string){
     if(name==this.a && pass==this.b){
-      console.log("Invalid")
+      console.log("valid")
     }
     else{
       alert("Invalid username or password")
