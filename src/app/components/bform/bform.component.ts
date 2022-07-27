@@ -8,11 +8,16 @@ import { FormGroup, FormControl, Validators, FormBuilder, NgForm } from '@angula
   styleUrls: ['./bform.component.css']
 })
 export class BformComponent implements OnInit {
-  @Input('ngModel')  
-  hhhhh:any="santhosh";
+  /* @Input('ngModel')  
   onSubmit(f : NgForm){
-    console.log(f.value);
-  }
+    if(f.value.forminput== null){
+      console.log(true);
+    }
+    else{
+      console.log(f.value.forminput);
+      console.log(false);
+    }
+  }*/
   constructor() { 
   }
 
