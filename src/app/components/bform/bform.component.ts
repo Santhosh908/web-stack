@@ -13,8 +13,7 @@ export class BformComponent implements OnInit {
   b:String="abcd"
   submit(name:string,pass:string){
     if(name==this.a && pass==this.b){
-      this.router.navigate(['HomeComponent'])
-      console.log("valid")
+      this.router.navigate([HomeComponent])
     }
     else{
       alert("Invalid username or password")
@@ -22,8 +21,6 @@ export class BformComponent implements OnInit {
   } 
   constructor(private router : Router) { 
   }
-
   ngOnInit(): void {
   }
-
 }
