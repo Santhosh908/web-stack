@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormControl, Validators, FormBuilder } from '@angular/forms';
+import { Component, Input, OnInit } from '@angular/core';
+import { FormGroup, FormControl, Validators, FormBuilder, NgForm } from '@angular/forms';
 
 
 @Component({
@@ -8,7 +8,11 @@ import { FormGroup, FormControl, Validators, FormBuilder } from '@angular/forms'
   styleUrls: ['./bform.component.css']
 })
 export class BformComponent implements OnInit {
-  hhhhh:any='santhosh';
+  @Input('ngModel')  
+  hhhhh:any="santhosh";
+  onSubmit(f : NgForm){
+    console.log(f.value);
+  }
   constructor() { 
   }
 

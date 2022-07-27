@@ -23,4 +23,5 @@ button{
     background-color: rgb(121, 241, 121);
     border-color: transparent;
     font-family: sans-serif;
+    cursor: pointer;
 }   

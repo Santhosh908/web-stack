@@ -1,5 +1,5 @@
 <div class="content">
-<!-- <form > -->
+<form #f="ngForm" (ngSubmit)="onSubmit(f)" novalidat>
     <label>User name:</label>
     <input type="text" placeholder="your name"><br><br>
     <label>Password:</label>
@@ -9,5 +9,5 @@
         Password must be at least 4 characters long.
       </div>
     <button>Login</button>
-<!-- </form> -->
+</form>
 </div>
