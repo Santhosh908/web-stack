@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, Output } from '@angular/core';
 import { FormGroup, FormControl, Validators, FormBuilder, NgForm } from '@angular/forms';
 
 
@@ -8,16 +8,16 @@ import { FormGroup, FormControl, Validators, FormBuilder, NgForm } from '@angula
   styleUrls: ['./bform.component.css']
 })
 export class BformComponent implements OnInit {
-  /* @Input('ngModel')  
-  onSubmit(f : NgForm){
-    if(f.value.forminput== null){
-      console.log(true);
+  a:String="Santhosh"
+  b:String="abcd"
+  submit(name:string,pass:string){
+    if(name==this.a && pass==this.b){
+      console.log("Invalid")
     }
     else{
-      console.log(f.value.forminput);
-      console.log(false);
+      alert("Invalid username or password")
     }
-  }*/
+  } 
   constructor() { 
   }
 
