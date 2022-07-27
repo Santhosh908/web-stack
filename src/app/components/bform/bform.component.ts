@@ -1,7 +1,7 @@
 import { Component, Input, OnInit, Output } from '@angular/core';
 import { FormGroup, FormControl, Validators, FormBuilder, NgForm } from '@angular/forms';
 import { Router,RouterModule } from '@angular/router';
-
+import { HomeComponent } from 'src/app/home/home.component';
 
 @Component({
   selector: 'app-bform',
@@ -13,7 +13,7 @@ export class BformComponent implements OnInit {
   b:String="abcd"
   submit(name:string,pass:string){
     if(name==this.a && pass==this.b){
-      this.router.navigate(['home'])
+      this.router.navigate(['HomeComponent'])
       console.log("valid")
     }
     else{
