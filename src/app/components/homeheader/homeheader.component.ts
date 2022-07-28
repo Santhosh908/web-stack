@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Route, Router } from '@angular/router';
+import { MatSidenav } from '@angular/material/sidenav';
 
 @Component({
   selector: 'app-homeheader',
@@ -13,7 +14,9 @@ export class HomeheaderComponent implements OnInit {
     this.router.navigate(['menu']);
 
    }
-
+   logout(){
+    this.router.navigate(['login'])
+   }
   ngOnInit(): void {
   }
 

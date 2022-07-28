@@ -19,7 +19,32 @@
     margin-left: 30%;
     margin-top: 1.5%;
 }
-.menu>Button{
+.menu>mat-icon{
     cursor: pointer;
+}
+.navitems{
+    margin-left: 35%;
+    display: flex;
+    margin-top: 2%;
+}
+.profile{
+    display: flex;
+}
+.profile>span{
+    margin-top: 6%;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+.logout>span{
+    margin-top: 6%;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+.logout{
+    margin-left: 150%;
+    display: flex;
+}
+Button{
     border-color: rgb(234, 234, 226);
+    cursor: pointer;
 }

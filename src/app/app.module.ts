@@ -12,6 +12,11 @@ import { HomeComponent } from './home/home.component';
 import { HomeheaderComponent } from './components/homeheader/homeheader.component';
 import { MenuComponent } from './menu/menu.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatSidenavModule} from '@angular/material/sidenav'
+import { MatIconModule } from '@angular/material/icon';
+import { MatDividerModule } from '@angular/material/divider';
+import { HomefooterComponent } from './components/homefooter/homefooter.component';
+
 
 @NgModule({
   declarations: [
@@ -20,13 +25,17 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     BformComponent,
     HomeComponent,
     HomeheaderComponent,
-    MenuComponent
+    MenuComponent,
+    HomefooterComponent
     ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatSidenavModule,
+    MatIconModule,
+    MatDividerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
