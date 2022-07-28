@@ -1,0 +1,25 @@
+.logo{
+    width: 40%;
+    margin-left: 10%;
+}
+.homeheader{
+    margin-top: 0%;
+    display: flex;
+    background-color: rgb(234, 234, 226);
+
+}
+.name{
+    padding-top: 2%;
+    font-size:x-large;
+    padding-left: 1%;
+    padding-right: 1%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.menu{
+    margin-left: 30%;
+    margin-top: 1.5%;
+}
+.menu>Button{
+    cursor: pointer;
+    border-color: rgb(234, 234, 226);
+}

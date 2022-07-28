@@ -16,7 +16,6 @@ export class BformComponent implements OnInit {
   }
 
   submit(name:string,pass:string){
-    debugger
     if(name==this.a && pass==this.b){
       this.router.navigate(['home']);
     }

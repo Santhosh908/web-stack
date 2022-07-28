@@ -9,18 +9,24 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { BformComponent } from './components/bform/bform.component';
 import { HomeComponent } from './home/home.component';
+import { HomeheaderComponent } from './components/homeheader/homeheader.component';
+import { MenuComponent } from './menu/menu.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     BformComponent,
-    HomeComponent
+    HomeComponent,
+    HomeheaderComponent,
+    MenuComponent
     ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
