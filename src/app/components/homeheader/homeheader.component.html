@@ -6,20 +6,16 @@
         CompanyName
     </div>
     <div class="navitems">
-        <div >
-        <Button class="profile">
-        <mat-icon>person</mat-icon>
-        <span>Profile</span>
-        </Button>
+        <div class="profile">
+        <mat-icon (click)="profile()">person</mat-icon>
+        <span (click)="profile()">Profile</span>
         </div>
-        <div >
-        <Button onclick="logout()" class="logout">
-        <mat-icon >logout</mat-icon>
-        <span>Logout</span>
-        </Button>
+        <div class="logout">
+        <mat-icon (click)="logout()">logout</mat-icon>
+        <span (click)="logout()">Logout</span>
         </div>
     </div>
-    <div class="menu">
-        <mat-icon (click)="menu()">menu</mat-icon>
-    </div>
+    <!-- <div class="menu"> -->
+        <!-- <mat-icon (click)="menu()">menu</mat-icon> -->
+    <!-- </div> -->
 </div>

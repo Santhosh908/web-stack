@@ -1,5 +1,5 @@
 .logo{
-    width: 40%;
+    width: 10%;
     margin-left: 10%;
 }
 .homeheader{
@@ -9,6 +9,7 @@
 
 }
 .name{
+    margin-left: 10%;
     padding-top: 2%;
     font-size:x-large;
     padding-left: 1%;
@@ -23,12 +24,14 @@
     cursor: pointer;
 }
 .navitems{
-    margin-left: 35%;
+    margin-left: 20%;
     display: flex;
     margin-top: 2%;
+    width: auto;
 }
 .profile{
     display: flex;
+    cursor: pointer;
 }
 .profile>span{
     margin-top: 6%;
@@ -43,8 +46,5 @@
 .logout{
     margin-left: 150%;
     display: flex;
-}
-Button{
-    border-color: rgb(234, 234, 226);
     cursor: pointer;
 }

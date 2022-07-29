@@ -16,6 +16,7 @@ import {MatSidenavModule} from '@angular/material/sidenav'
 import { MatIconModule } from '@angular/material/icon';
 import { MatDividerModule } from '@angular/material/divider';
 import { HomefooterComponent } from './components/homefooter/homefooter.component';
+import { ProfileComponent } from './profile/profile.component';
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import { HomefooterComponent } from './components/homefooter/homefooter.componen
     HomeComponent,
     HomeheaderComponent,
     MenuComponent,
-    HomefooterComponent
+    HomefooterComponent,
+    ProfileComponent
     ],
   imports: [
     BrowserModule,

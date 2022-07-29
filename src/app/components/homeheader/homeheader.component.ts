@@ -11,8 +11,11 @@ export class HomeheaderComponent implements OnInit {
   constructor(private router:Router) {
   }
   menu(){
-    this.router.navigate(['menu']);
+    this.router.navigate(['menu'])
 
+   }
+   profile(){
+    this.router.navigate(['profile'])
    }
    logout(){
     this.router.navigate(['login'])

@@ -1,0 +1,13 @@
+mat-sidenav-content{
+    background-color: rgb(241, 223, 138);
+    width: 25%;
+    padding: 1%;
+    font-size: larger;
+    border-color: black;
+}
+img{
+    margin-left: 10%;
+}
+img>span{
+    font-size: larger;
+}
