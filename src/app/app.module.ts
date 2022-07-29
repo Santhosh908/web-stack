@@ -18,8 +18,7 @@ import { MatDividerModule } from '@angular/material/divider';
 import { HomefooterComponent } from './components/homefooter/homefooter.component';
 import { ProfileComponent } from './profile/profile.component';
 import {DragDropModule} from '@angular/cdk/drag-drop';
-
-
+import { AuthguardservicesService } from './authguardservices.service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -41,7 +40,7 @@ import {DragDropModule} from '@angular/cdk/drag-drop';
     MatDividerModule,
     DragDropModule
   ],
-  providers: [],
+  providers: [  AuthguardservicesService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
