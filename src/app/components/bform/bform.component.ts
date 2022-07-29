@@ -15,13 +15,9 @@ export class BformComponent implements OnInit {
   }
   ngOnInit(): void {
   }
-   setlogin(){
-    this.check=true
-  }
+  
   submit(name:string,pass:string){
-    if(name==this.a && pass==this.b && this.check==true){
-      console.log("home")
-      console.log(this.check)
+    if(name==this.a && pass==this.b ){
       this.router.navigate(['home']);
     }
     else{
