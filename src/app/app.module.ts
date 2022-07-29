@@ -40,7 +40,7 @@ import { AuthguardservicesService } from './authguardservices.service';
     MatDividerModule,
     DragDropModule
   ],
-  providers: [  AuthguardservicesService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
