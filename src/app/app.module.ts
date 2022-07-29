@@ -17,6 +17,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatDividerModule } from '@angular/material/divider';
 import { HomefooterComponent } from './components/homefooter/homefooter.component';
 import { ProfileComponent } from './profile/profile.component';
+import {DragDropModule} from '@angular/cdk/drag-drop';
 
 
 @NgModule({
@@ -37,7 +38,8 @@ import { ProfileComponent } from './profile/profile.component';
     BrowserAnimationsModule,
     MatSidenavModule,
     MatIconModule,
-    MatDividerModule
+    MatDividerModule,
+    DragDropModule
   ],
   providers: [],
   bootstrap: [AppComponent]
