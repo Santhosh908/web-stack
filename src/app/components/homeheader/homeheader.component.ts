@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Route, Router } from '@angular/router';
 import { MatSidenav } from '@angular/material/sidenav';
+import { BformComponent } from '../bform/bform.component';
 
 @Component({
   selector: 'app-homeheader',
