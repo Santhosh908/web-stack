@@ -26,6 +26,18 @@ button{
     cursor: pointer;
 }   
 .error{
-    color: red;
+    color: rgb(243, 71, 71);
     margin-left: 48%;
+    font-style: italic;
+}
+input{
+    border-radius: 5px;
+    border-color: white;
+    border-width: 2px;
+    padding: 5px;
+}
+input:focus {
+    outline: none !important;
+    border:1px solid rgb(45, 122, 239);
+    box-shadow: 0 0 20px #509def;
 }
