@@ -11,6 +11,7 @@ import { BformComponent } from '../bform/bform.component';
 export class HomeheaderComponent implements OnInit {
   constructor(private router:Router) {
   }
+  
   menu(){
     this.router.navigate(['menu'])
 
@@ -21,6 +22,9 @@ export class HomeheaderComponent implements OnInit {
    logout(){
     this.router.navigate(['login'])
    }
+   home(){
+    this.router.navigate(['home'])
+  }
   ngOnInit(): void {
   }
 

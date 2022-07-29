@@ -24,7 +24,7 @@
     cursor: pointer;
 }
 .navitems{
-    margin-left: 20%;
+    margin-left: 10%;
     display: flex;
     margin-top: 2%;
     width: auto;
@@ -44,7 +44,18 @@
     font-weight: bold;
 }
 .logout{
-    margin-left: 150%;
+    margin-left: 40%;
     display: flex;
     cursor: pointer;
+}
+.home{
+    margin-left: 60%;
+    display: flex;
+    cursor: pointer;
+    margin-right: 50%;
+}
+.home>span{
+     margin-top: 6%;
+    font-family: sans-serif;
+    font-weight: bold;
 }
