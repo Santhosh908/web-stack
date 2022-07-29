@@ -60,3 +60,12 @@
     font-family: sans-serif;
     font-weight: bold;
 }
+.home:hover{
+    color: rgb(67, 66, 66);
+}
+.profile:hover{
+    color: rgb(67, 66, 66);
+}
+.logout:hover{
+    color: rgb(67, 66, 66);
+}
