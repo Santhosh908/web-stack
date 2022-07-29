@@ -9,7 +9,7 @@
     height: 50px;
 }
 .footermain{
-    position: fixed;
+    position : fixed;
     margin-top: 38%;
     margin-bottom: 0%;
     display: flex;
