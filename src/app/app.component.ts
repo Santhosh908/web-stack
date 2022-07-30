@@ -1,5 +1,5 @@
+import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
-import { HomeComponent } from './home/home.component';
 
 @Component({
   selector: 'app-root',
@@ -9,4 +9,7 @@ import { HomeComponent } from './home/home.component';
 
 export class AppComponent {
   title = 'angular-login';
+  constructor(http:HttpClient){
+
+  }
 }

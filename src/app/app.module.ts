@@ -19,7 +19,7 @@ import { HomefooterComponent } from './components/homefooter/homefooter.componen
 import { ProfileComponent } from './profile/profile.component';
 import {DragDropModule} from '@angular/cdk/drag-drop';
 import { AuthGuard } from './auth.guard';
-
+import {  HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -39,7 +39,8 @@ import { AuthGuard } from './auth.guard';
     MatSidenavModule,
     MatIconModule,
     MatDividerModule,
-    DragDropModule
+    DragDropModule,
+    HttpClientModule
   ],
   providers: [AuthGuard],
   bootstrap: [AppComponent]
