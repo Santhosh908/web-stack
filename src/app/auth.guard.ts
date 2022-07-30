@@ -1,20 +1,22 @@
 import { Injectable } from '@angular/core';
-import { ActivatedRouteSnapshot, CanActivate, RouterStateSnapshot, UrlTree } from '@angular/router';
+import { ActivatedRouteSnapshot, CanActivate, Route, Router, RouterStateSnapshot, UrlTree } from '@angular/router';
 import { Observable } from 'rxjs';
-import { AuthService } from './auth.service';
 import { BformComponent } from './components/bform/bform.component';
-
+import { AuthService } from './auth.service';
 @Injectable({
-  providedIn: 'root',useClass: BformComponent
+  providedIn: 'root'
 })
 export class AuthGuard implements CanActivate {
-  constructor(private authservice:AuthService){
+  constructor(private auth:AuthService,private route:Router){
+  }
+  canActivate(){
+    if(this.auth.canlog()){
+      return true
+    }
+    else{
+      this.route.navigate(['login'])
+      return false
+    }
+  }  
 
-  }
-  canActivate(
-    route: ActivatedRouteSnapshot,
-    state: RouterStateSnapshot): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
-    return true
-  }
-  
 }

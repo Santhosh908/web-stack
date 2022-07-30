@@ -8,6 +8,6 @@ export class AuthService {
   constructor() {
   }
   canlog():boolean{
-  return true
+    return (!!localStorage.getItem('loggedin'))
 }
 }

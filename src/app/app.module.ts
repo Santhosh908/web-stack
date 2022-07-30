@@ -42,7 +42,7 @@ import {  HttpClientModule } from '@angular/common/http';
     DragDropModule,
     HttpClientModule
   ],
-  providers: [AuthGuard],
+  providers: [AppComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -20,6 +20,7 @@ export class HomeheaderComponent implements OnInit {
     this.router.navigate(['profile'])
    }
    logout(){
+    localStorage.removeItem('loggedin')
     this.router.navigate(['login'])
    }
    home(){
