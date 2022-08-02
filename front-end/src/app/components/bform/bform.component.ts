@@ -17,13 +17,13 @@ export class BformComponent implements OnInit {
   }
   ngOnInit(): void {
   }
-  
+    url="http://localhost:3000/enroll"
+
   submit(name:string,pass:string){
     var formData: any = new FormData();
     formData.append("name",name)
     formData.append("pass",pass)
-    const url="http://localhost:3000/enroll"
-    this.http.post<any>(url,{"name":name,"pass":pass})
+    this.http.post<any>(this.url,{"name":name,"pass":pass})
     this.router.navigate(['home']);
     
     if(name=="" && pass==""){
