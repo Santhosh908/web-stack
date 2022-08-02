@@ -20,6 +20,7 @@ import { ProfileComponent } from './profile/profile.component';
 import {DragDropModule} from '@angular/cdk/drag-drop';
 import { AuthGuard } from './auth.guard';
 import {  HttpClientModule } from '@angular/common/http';
+import { SignupComponent } from './signup/signup.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,7 +30,8 @@ import {  HttpClientModule } from '@angular/common/http';
     HomeheaderComponent,
     MenuComponent,
     HomefooterComponent,
-    ProfileComponent
+    ProfileComponent,
+    SignupComponent
     ],
   imports: [
     BrowserModule,
