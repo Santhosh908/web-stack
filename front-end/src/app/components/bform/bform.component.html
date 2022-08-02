@@ -12,6 +12,7 @@
       <label>Password:</label>
     <input type="password" name="formpass" ngModel required #pass="ngModel">
     <div class="error" *ngIf="!pass.valid"><strong>*enter your password</strong></div>
-    <button  (click)="submit(first.value,pass.value)">Login</button>
+    <div class="butclass"><button  (click)="submit(first.value,pass.value)">Login</button></div>
+    <div class="signup">don't have a account?<button (click)="signin()">click here</button></div>
 </form>
 </div>

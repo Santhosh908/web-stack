@@ -44,7 +44,7 @@ export class BformComponent implements OnInit {
     }
     console.log(this.Check+"check")
   } 
-  canlogin():boolean{
-    return this.Check
+  signin(){
+    this.router.navigate(['signup'])
   }
 }

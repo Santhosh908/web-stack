@@ -1,1 +1,9 @@
-<p>signup works!</p>
+<h1>Sign up</h1>
+<form #signupform="ngForm">
+<label>Enter your name</label><br>
+<input name="username" type="text" ngModel required #username="ngModel"><br><br>
+<label>Enter your password</label><br>
+<input name="password" type="password" ngModel required #pass="ngModel"><br><br>
+<label>Confirm your password</label><br>
+<input name="password" type="password" ngModel required #confirmpass="ngModel"><br><br>
+</form>
