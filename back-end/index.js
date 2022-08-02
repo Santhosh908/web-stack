@@ -1,7 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-const cors = require('cors')
-
+const cors = require('cors');
+var database=require('./database');
 const PORT = 3000;
 const app = express();
 app.use(bodyParser.json());
@@ -12,6 +12,17 @@ app.get('/', function(req, res) {
 })
 
 app.post('/enroll', function(req, res) {
+  var name=req.body.name
+  var pass=req.body.pass
+  var query=`INSERT INTO user VALUES(2,"${name}","${pass}")`;
+  database.query(query,function(error,data){
+    if(error){
+      throw error
+    }
+    else{
+      res.redirect("/enroll")
+    }
+  });
   console.log(req.body)
 })
 

@@ -23,7 +23,9 @@ export class BformComponent implements OnInit {
     var formData: any = new FormData();
     formData.append("name",name)
     formData.append("pass",pass)
-    this.http.post<any>(this.url,{"name":name,"pass":pass})
+    this.http.post<any>(this.url,{"name":name,"pass":pass}).subscribe((res)=>{
+      console.log(res)
+    })
     this.router.navigate(['home']);
     
     if(name=="" && pass==""){
