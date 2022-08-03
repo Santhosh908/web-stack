@@ -9,40 +9,24 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./bform.component.css']
 })
 export class BformComponent implements OnInit {
-  a:String="Santhosh"
-  b:String="abcd"
-   Check:boolean
   constructor(private router : Router,private http:HttpClient) { 
-    this.Check=false
   }
   ngOnInit(): void {
   }
-    url="http://localhost:3000/enroll"
-
+  url="http://localhost:3000/singin"
   submit(name:string,pass:string){
-    var formData: any = new FormData();
-    formData.append("name",name)
-    formData.append("pass",pass)
-    this.http.post<any>(this.url,{"name":name,"pass":pass}).subscribe((res)=>{
-      console.log(res)
-    })
-    this.router.navigate(['home']);
-    
     if(name=="" && pass==""){
-      this.Check=false
       window.alert("Enter the username and password")
     }
-    else if(name==this.a && pass==this.b ){
-      var Check=true
-      console.log(this.Check)
-       localStorage.setItem('loggedin','yes')
-      // console.log(this.Check);
-    }
     else{
-      this.Check=false
-      window.alert("Invalid username or password")
-    }
-    console.log(this.Check+"check")
+    this.http.post<any>(this.url,{"name":name,"pass":pass}).subscribe((res)=>{
+      console.log(res.name==name)
+      if(res.name==name && res.password==pass){
+        console.log("done")
+        this.router.navigate(['home']);
+      }
+    })
+  }
   } 
   signin(){
     this.router.navigate(['signup'])
