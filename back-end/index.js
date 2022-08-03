@@ -10,11 +10,30 @@ app.use(cors())
 app.get('/', function(req, res) {
 	res.send('Hello from server')
 })
-
+var someVar = [];
+app.post('/singin',function(req,res){
+  var name=req.body.name
+  var pass=req.body.pass
+  var query=`SELECT * FROM user where name="${name}" and password="${pass}"`;
+  database.query(query,function(err, rows){
+    if(err) {
+      throw err;
+    } else {
+      setValue(rows);
+    }
+  });
+  res.send(someVar[0])
+})
+function setValue(value) {
+    someVar = value;
+  }
+  // app.get('/singin',function(req,res){
+  //   res.send(someVar[0].name)
+  // });
 app.post('/enroll', function(req, res) {
   var name=req.body.name
   var pass=req.body.pass
-  var query=`INSERT INTO user VALUES(2,"${name}","${pass}")`;
+  var query=`INSERT INTO user VALUES(4,"${name}","${pass}")`;
   database.query(query,function(error,data){
     if(error){
       throw error
@@ -23,7 +42,6 @@ app.post('/enroll', function(req, res) {
       res.redirect("/enroll")
     }
   });
-  console.log(req.body)
 })
 
 app.listen(PORT, function(){
