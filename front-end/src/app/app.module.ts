@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { Injectable, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { CommonModule } from '@angular/common';
@@ -19,6 +19,7 @@ import { HomefooterComponent } from './components/homefooter/homefooter.componen
 import { ProfileComponent } from './profile/profile.component';
 import {DragDropModule} from '@angular/cdk/drag-drop';
 import { AuthGuard } from './auth.guard';
+import { AuthService } from './auth.service';
 import {  HttpClientModule } from '@angular/common/http';
 import { SignupComponent } from './signup/signup.component';
 @NgModule({
@@ -44,7 +45,7 @@ import { SignupComponent } from './signup/signup.component';
     DragDropModule,
     HttpClientModule
   ],
-  providers: [AppComponent],
+  providers: [AuthService,Permissions,AppComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

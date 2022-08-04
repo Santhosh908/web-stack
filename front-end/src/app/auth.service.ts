@@ -7,7 +7,7 @@ export class AuthService {
 
   constructor() {
   }
-  canlog():boolean{
+  canlog(){
     return true
 }
 }
